@@ -1,0 +1,160 @@
+重复文件删除日志
+删除时间: 2026-04-13 11:13:59.182175
+================================================================================
+
+成功删除: 100 个文件
+跳过保留: 45 个文件
+删除失败: 0 个文件
+
+================================================================================
+已删除的文件:
+================================================================================
+  - 03 CAI (2).zip
+  - 1004JRG_error (1).txt
+  - 1004JRG_error (2).txt
+  - 1767667938306 (1).jpg
+  - 2024 Statement ( 009744672 - Cheng, Lin  ) (1).pdf
+  - 2025 Annual Performance Evaluation_Dist (1).xlsx
+  - 2025 Annual Performance Evaluation_Dist (2).xlsx
+  - 2025 Annual Performance Evaluation_Dist (3).xlsx
+  - 2025 Annual Performance Evaluation_Dist (4).xlsx
+  - 2025 Annual Performance Evaluation_Dist (5).xlsx
+  - 2025 IBMer Watsonx Challenge (1).pptx
+  - 2025 Mid Yeare Accessment template AOP (3).xlsx
+  - AI Test Strategy Proposal (1).pptx
+  - AO AI Core Talent Identification (1).xlsx
+  - AO AI Core Talent Identification (2).xlsx
+  - An Qi Yu CV English _2501_en (1).pptx
+  - April 2025 Currency(3647) (1).xls
+  - Assignment Information Summary (1).xlsx
+  - Assignment Information Summary (2).xlsx
+  - Back+to+the+Wolf+Pack (1).pptx
+  - BenchReport_2026_Q1_WEEK3 (1).xlsx
+  - Book1 (2).xlsx
+  - CIC Export Performance Management Enablement  (2).pptx
+  - CV_Yin Xue Bin(ZZ01V4)_7B_AMS+Fullstack (1).pptx
+  - China PPM - Q2'25 WK06 AOP Team1 (1).xlsx
+  - CompPlan_GDP_2024_Performance_Year_的管理层评估_(Ling.Zhi.Wang@ibm.com) (1).xls
+  - CompPlan_GDP_2024_Performance_Year_的管理层评估_(Ling.Zhi.Wang@ibm.com) (2).xls
+  - CompPlan_GDP_2024_Performance_Year_的管理层评估_(Ling.Zhi.Wang@ibm.com) (3).xls
+  - Create a PIP and tag LP in AskHR step by step guide (1).pptx
+  - EA (2).xlsx
+  - EF SET Certificate (1).pdf
+  - EF SET Certificate (2).pdf
+  - Employee Status Report v1.0_202503 (1).xlsx
+  - Employee Status Report v1.0_20250506 (1).xlsx
+  - Employee Status Report v1.0_20250506 (2).xlsx
+  - Employee Status Report v1.0_20250506 (3).xlsx
+  - Engagement Summary (1).xlsx
+  - Engagement Summary (2).xlsx
+  - GDP_Dist_v1.0 (2).xlsx
+  - GDP_Dist_v1.0 (5).xlsx
+  - Gemini_Generated_Image_hvowqyhvowqyhvow (1).png
+  - Hub Bench Report-CIC China-20250818_by weeks_AOP (1).xlsx
+  - Hub Bench Report-CIC China-20250818_by weeks_AOP (2).xlsx
+  - IBM CV_Long Ze Hong (03434C672) (1).pptx
+  - IBM Confidential--2025 CIC China Project Cost Estimation Tool v 1.0 (1).xlsm
+  - IBM QES - Capability presentation_2026 V1.0 (1).pptx
+  - IBM_2026 Calendar (1).xlsx
+  - Insurance Claims Handling user guild (1).docx
+  - Intergrated Competency Team LP List_as of 0519_YunFuHe (3).xlsx
+  - July 2025 Currency(3652) (1).xls
+  - LP status by UT analyais_AOP as of 20250717 Team1 (1).xlsx
+  - License to Lead Badge步骤说明 (1).pptx
+  - MEF introduction (1).pptx
+  - MEF introduction (2).pptx
+  - Method Content transcript (1).pdf
+  - Method Tailoring transcript (1).pdf
+  - PGS Position Status v2 (1).xlsx
+  - PIP form_Liu JinJin(049868)_202510 (1).xlsx
+  - PIP form_XuLiangLiang(209501)_202510 (1).xlsx
+  - Performance Evaluation CAO Team1_T1-0105 (1).xlsx
+  - Performance Evaluation CAO Team1_T1-0105 (2).xlsx
+  - Performance Evaluation CAO Team1_T1-0105 (3).xlsx
+  - Q3 Training Quarterly Plan Template_2024 v18 (Plan rate @7.0)-CIC China (1).xlsx
+  - RV结果 (1).xlsx
+  - SAP 休假申请提交 (1).pptx
+  - Screenshot 2025-11-20 at 08.22.15 (1).png
+  - Screenshot 2026-03-30 at 16.56.19 (1).png
+  - ServiceNow CPL Team1 Status (1).xlsx
+  - ServiceNow Resouce List CAO Team1 20260120 (1).xlsx
+  - ServiceNow Resouce List CAO Team1 20260120 (2).xlsx
+  - ServiceNowProject ITSM Practice (1).pptx
+  - SessionManagerPluginSetup (1).exe
+  - SmartOpsInterimEvaluation_v2 (1).xlsx
+  - SmartOpsInterimEvaluation_v2 (2).xlsx
+  - Sobeys case study-SAP QE (1).pptx
+  - SunYu+7A+ADVISORY IT SPECIALIST+JAVA&COLBOL (1).pptx
+  - Virtual Project Information_0512 (1).xlsx
+  - XX CV English _模版 (1).pptx
+  - Xuebin Yin CV English _2505 (1).pptx
+  - auto_generated_captions (1).vtt
+  - auto_generated_captions (2).vtt
+  - ibmconsultingassistants-0.0.22 (1).vsix
+  - ibmconsultingassistants-0.0.22 (2).vsix
+  - members assignment (1).xlsx
+  - report (4).pdf
+  - report (5).pdf
+  - report (6).pdf
+  - understanding-the-unique-risks-of-generative-ai-transcript (1).pdf
+  - updateExcelVersionTool (1).py
+  - windows (1).zip
+  - 【原本・提出時PDF化必須】2025年度 OSAPJT 教育受講完了報告 (1).xlsx
+  - 分析 (1).xlsx
+  - 単価2025年 (1).xlsx
+  - 単価2025年 (2).xlsx
+  - 単価2025年 (3).xlsx
+  - 常规文具申请表格-更新版_JTB_2025 (1).xls
+  - 影像使用同意书-个人 (1).docx
+  - 最难忘的地方—张家界 (1).pptx
+  - 自我介绍 (1).docx
+  - 马铜13236936536mtongsz@cn.ibm.com (1).pdf
+
+================================================================================
+跳过的文件 (排除规则):
+================================================================================
+  - image (1).png
+  - image (10).png
+  - image (11).png
+  - image (12).png
+  - image (13).png
+  - image (14).png
+  - image (15).png
+  - image (16).png
+  - image (17).png
+  - image (18).png
+  - image (19).png
+  - image (2).png
+  - image (20).png
+  - image (21).png
+  - image (22).png
+  - image (23).png
+  - image (24).png
+  - image (25).png
+  - image (26).png
+  - image (27).png
+  - image (28).png
+  - image (29).png
+  - image (3).png
+  - image (30).png
+  - image (31).png
+  - image (311).png
+  - image (312).png
+  - image (313).png
+  - image (314).png
+  - image (315).png
+  - image (316).png
+  - image (317).png
+  - image (318).png
+  - image (319).png
+  - image (320).png
+  - image (321).png
+  - image (322).png
+  - image (323).png
+  - image (324).png
+  - image (4).png
+  - image (5).png
+  - image (6).png
+  - image (7).png
+  - image (8).png
+  - image (9).png

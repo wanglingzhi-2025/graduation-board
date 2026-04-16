@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毕业留言板 - 测试页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+        }
+        .test-item {
+            padding: 10px;
+            margin: 10px 0;
+            background: #f8f9fa;
+            border-left: 4px solid #27ae60;
+        }
+        .error {
+            border-left-color: #e74c3c;
+        }
+        button {
+            padding: 10px 20px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #357abd;
+        }
+        .btn-danger {
+            background: #e74c3c;
+        }
+        .btn-danger:hover {
+            background: #c0392b;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .account-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .account-item {
+            padding: 8px;
+            background: #e8f4f8;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎓 毕业留言板系统 - 测试页面</h1>
+
+    <div class="test-section">
+        <h2>系统状态检查</h2>
+        <div id="systemStatus"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>快速测试</h2>
+        <p>使用以下测试账号快速登录：</p>
+        <button onclick="testLogin('stu001')">测试学生账号 (stu001)</button>
+        <button onclick="testLogin('tch001')">测试教师账号 (tch001)</button>
+        <button onclick="window.location.href='graduation.html'">前往登录页面</button>
+    </div>
+
+    <div class="test-section">
+        <h2>预设账号列表</h2>
+        
+        <h3>学生账号 (45个)</h3>
+        <div class="account-list" id="studentAccounts"></div>
+        
+        <h3>教师账号 (10个)</h3>
+        <div class="account-list" id="teacherAccounts"></div>
+        
+        <p style="margin-top: 20px;">
+            <strong>注意：</strong>所有账号的默认密码与用户名相同
+        </p>
+    </div>
+
+    <div class="test-section">
+        <h2>数据管理</h2>
+        <button onclick="viewData()">查看存储数据</button>
+        <button onclick="clearData()" class="btn-danger">清除所有数据</button>
+        <button onclick="reinitialize()">重新初始化账号</button>
+        <div id="dataInfo" style="margin-top: 15px;"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>使用说明</h2>
+        <ol>
+            <li>点击"前往登录页面"开始使用系统</li>
+            <li>使用任意预设账号登录（用户名和密码相同）</li>
+            <li>登录后可以：
+                <ul>
+                    <li>写公开留言或私密留言</li>
+                    <li>上传照片</li>
+                    <li>查看和筛选留言</li>
+                    <li>点赞留言</li>
+                </ul>
+            </li>
+            <li>如遇问题，可以清除数据重新开始</li>
+        </ol>
+    </div>
+
+    <script>
+        // Check system status
+        function checkSystem() {
+            const statusDiv = document.getElementById('systemStatus');
+            let html = '';
+
+            // Check localStorage
+            const hasAccounts = localStorage.getItem('graduation_accounts_initialized');
+            const accounts = localStorage.getItem('graduation_accounts');
+            const messages = localStorage.getItem('graduation_messages');
+            const currentUser = localStorage.getItem('graduation_current_user');
+
+            html += `<div class="test-item ${hasAccounts ? '' : 'error'}">
+                ✓ 账号系统: ${hasAccounts ? '已初始化' : '未初始化'}
+            </div>`;
+
+            if (accounts) {
+                const accountsData = JSON.parse(accounts);
+                html += `<div class="test-item">
+                    ✓ 账号数量: ${accountsData.length} 个
+                </div>`;
+            }
+
+            if (messages) {
+                const messagesData = JSON.parse(messages);
+                html += `<div class="test-item">
+                    ✓ 留言数量: ${messagesData.length} 条
+                </div>`;
+            } else {
+                html += `<div class="test-item">
+                    ✓ 留言数量: 0 条
+                </div>`;
+            }
+
+            if (currentUser) {
+                const userData = JSON.parse(currentUser);
+                html += `<div class="test-item">
+                    ✓ 当前登录: ${userData.name} (${userData.username})
+                </div>`;
+            } else {
+                html += `<div class="test-item">
+                    ℹ 当前状态: 未登录
+                </div>`;
+            }
+
+            statusDiv.innerHTML = html;
+        }
+
+        // Display accounts
+        function displayAccounts() {
+            const studentDiv = document.getElementById('studentAccounts');
+            const teacherDiv = document.getElementById('teacherAccounts');
+
+            let studentHtml = '';
+            for (let i = 1; i <= 45; i++) {
+                const username = `stu${String(i).padStart(3, '0')}`;
+                studentHtml += `<div class="account-item">${username}</div>`;
+            }
+            studentDiv.innerHTML = studentHtml;
+
+            let teacherHtml = '';
+            for (let i = 1; i <= 10; i++) {
+                const username = `tch${String(i).padStart(3, '0')}`;
+                teacherHtml += `<div class="account-item">${username}</div>`;
+            }
+            teacherDiv.innerHTML = teacherHtml;
+        }
+
+        // Test login
+        function testLogin(username) {
+            // Initialize accounts if needed
+            if (!localStorage.getItem('graduation_accounts_initialized')) {
+                initializeAccounts();
+            }
+
+            const accounts = JSON.parse(localStorage.getItem('graduation_accounts'));
+            const account = accounts.find(acc => acc.username === username);
+
+            if (account) {
+                const session = {
+                    username: account.username,
+                    name: account.name,
+                    role: account.role,
+                    school: '第一中学',
+                    class: '8年2班',
+                    loginTime: new Date().toISOString()
+                };
+                localStorage.setItem('graduation_current_user', JSON.stringify(session));
+                alert(`登录成功！用户：${account.name}`);
+                window.location.href = 'message-board.html';
+            } else {
+                alert('账号不存在！');
+            }
+        }
+
+        // Initialize accounts
+        function initializeAccounts() {
+            const accounts = [];
+
+            for (let i = 1; i <= 45; i++) {
+                const username = `stu${String(i).padStart(3, '0')}`;
+                accounts.push({
+                    username: username,
+                    password: username,
+                    role: 'student',
+                    name: `学生${i}`,
+                    school: '第一中学',
+                    class: '8年2班'
+                });
+            }
+
+            for (let i = 1; i <= 10; i++) {
+                const username = `tch${String(i).padStart(3, '0')}`;
+                accounts.push({
+                    username: username,
+                    password: username,
+                    role: 'teacher',
+                    name: `教师${i}`,
+                    school: '第一中学',
+                    class: '8年2班'
+                });
+            }
+
+            localStorage.setItem('graduation_accounts', JSON.stringify(accounts));
+            localStorage.setItem('graduation_accounts_initialized', 'true');
+        }
+
+        // View data
+        function viewData() {
+            const dataDiv = document.getElementById('dataInfo');
+            const accounts = localStorage.getItem('graduation_accounts');
+            const messages = localStorage.getItem('graduation_messages');
+            
+            let html = '<h3>存储数据概览</h3>';
+            
+            if (accounts) {
+                const accountsData = JSON.parse(accounts);
+                html += `<p><strong>账号数据：</strong>${accountsData.length} 个账号</p>`;
+            }
+            
+            if (messages) {
+                const messagesData = JSON.parse(messages);
+                html += `<p><strong>留言数据：</strong>${messagesData.length} 条留言</p>`;
+            } else {
+                html += `<p><strong>留言数据：</strong>暂无留言</p>`;
+            }
+            
+            dataDiv.innerHTML = html;
+        }
+
+        // Clear data
+        function clearData() {
+            if (confirm('确定要清除所有数据吗？这将删除所有留言和登录信息！')) {
+                localStorage.removeItem('graduation_accounts');
+                localStorage.removeItem('graduation_accounts_initialized');
+                localStorage.removeItem('graduation_messages');
+                localStorage.removeItem('graduation_current_user');
+                alert('数据已清除！');
+                checkSystem();
+            }
+        }
+
+        // Reinitialize
+        function reinitialize() {
+            if (confirm('确定要重新初始化账号系统吗？')) {
+                localStorage.removeItem('graduation_accounts');
+                localStorage.removeItem('graduation_accounts_initialized');
+                initializeAccounts();
+                alert('账号系统已重新初始化！');
+                checkSystem();
+            }
+        }
+
+        // Initialize on load
+        window.onload = function() {
+            checkSystem();
+            displayAccounts();
+        };
+    </script>
+</body>
+</html>

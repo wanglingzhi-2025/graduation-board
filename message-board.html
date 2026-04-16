@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毕业留言板</title>
+    <link rel="stylesheet" href="css/graduation.css">
+</head>
+<body class="graduation-theme">
+    <div class="campus-scene board-scene" aria-hidden="true">
+        <div class="sun-glow"></div>
+        <div class="paper-plane plane-left">✈</div>
+        <div class="paper-plane plane-right plane-animated" id="messagePlane">✈</div>
+        <div class="tree tree-left">
+            <span class="tree-canopy"></span>
+            <span class="tree-trunk"></span>
+        </div>
+        <div class="tree tree-right">
+            <span class="tree-canopy"></span>
+            <span class="tree-trunk"></span>
+        </div>
+        <div class="campus-building"></div>
+        <div class="forest-path"></div>
+        <div class="teen-group">
+            <span class="teen teen-1"></span>
+            <span class="teen teen-2"></span>
+            <span class="teen teen-3"></span>
+            <span class="teen teen-4"></span>
+            <span class="teen teen-5"></span>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>🎓 毕业留言板</h1>
+            <div class="nav-info">
+                <span id="userInfo"></span>
+                <button id="logoutBtn" class="btn-logout">退出登录</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="avatar" id="userAvatar">👤</div>
+                <h3 id="userName"></h3>
+                <p id="userRole"></p>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="messageCount">0</span>
+                    <span class="stat-label">我的留言</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="receivedCount">0</span>
+                    <span class="stat-label">收到留言</span>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>筛选留言</h3>
+                <button class="filter-btn active" data-filter="all">全部留言</button>
+                <button class="filter-btn" data-filter="public">公开留言</button>
+                <button class="filter-btn" data-filter="private">私密留言</button>
+                <button class="filter-btn" data-filter="my">我的留言</button>
+            </div>
+
+            <div class="class-info">
+                <h3>班级信息</h3>
+                <p id="schoolInfo"></p>
+                <p id="classInfo"></p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="action-bar">
+                <button id="newMessageBtn" class="btn-primary">✍️ 写留言</button>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="搜索留言内容或作者...">
+                    <button id="searchBtn">🔍</button>
+                </div>
+            </div>
+
+            <div id="messageList" class="message-list">
+                <!-- Messages will be loaded here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- New Message Modal -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>✍️ 写留言</h2>
+            <form id="messageForm">
+                <div class="form-group">
+                    <label for="messageType">留言类型</label>
+                    <select id="messageType" required>
+                        <option value="public">公开留言 - 所有人可见</option>
+                        <option value="private">私密留言 - 仅接收者可见</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="recipientGroup" style="display: none;">
+                    <label for="recipient">接收者</label>
+                    <select id="recipient">
+                        <option value="">选择接收者...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="messageTitle">标题</label>
+                    <input type="text" id="messageTitle" placeholder="给留言起个标题..." required maxlength="50">
+                </div>
+
+                <div class="form-group anonymous-option">
+                    <label>
+                        <input type="checkbox" id="isAnonymous">
+                        匿名留言（其他同学将看不到你的真实姓名）
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="messageContent">留言内容</label>
+                    <textarea id="messageContent" rows="6" placeholder="写下你想说的话..." required maxlength="500"></textarea>
+                    <small><span id="charCount">0</span>/500 字</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="messagePhoto">上传照片 (可选)</label>
+                    <input type="file" id="messagePhoto" accept="image/*">
+                    <div id="photoPreview" class="photo-preview"></div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" id="cancelBtn">取消</button>
+                    <button type="submit" class="btn-primary">发布留言</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- View Message Modal -->
+    <div id="viewModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="viewMessageContent"></div>
+        </div>
+    </div>
+
+    <script src="js/graduation-auth.js"></script>
+    <script src="js/graduation-board.js"></script>
+</body>
+</html>

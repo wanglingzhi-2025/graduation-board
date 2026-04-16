@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背单词应用 - 登录/注册</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-card">
+            <div class="logo">
+                <h1>📚 背单词</h1>
+                <p class="tagline">每天进步一点点</p>
+            </div>
+
+            <!-- Login Form -->
+            <div id="loginForm" class="form-container active">
+                <h2>登录</h2>
+                <form id="loginFormElement">
+                    <div class="form-group">
+                        <label for="loginUsername">用户名</label>
+                        <input type="text" id="loginUsername" name="username" required 
+                               placeholder="请输入用户名" autocomplete="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">密码</label>
+                        <input type="password" id="loginPassword" name="password" required 
+                               placeholder="请输入密码" autocomplete="current-password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">登录</button>
+                    </div>
+                    <div class="form-footer">
+                        <p>还没有账号？ <a href="#" id="showRegister">立即注册</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Register Form -->
+            <div id="registerForm" class="form-container">
+                <h2>注册</h2>
+                <form id="registerFormElement">
+                    <div class="form-group">
+                        <label for="registerUsername">用户名</label>
+                        <input type="text" id="registerUsername" name="username" required 
+                               placeholder="请输入用户名（3-20个字符）" 
+                               minlength="3" maxlength="20" autocomplete="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">密码</label>
+                        <input type="password" id="registerPassword" name="password" required 
+                               placeholder="请输入密码（至少6个字符）" 
+                               minlength="6" autocomplete="new-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">确认密码</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required 
+                               placeholder="请再次输入密码" 
+                               minlength="6" autocomplete="new-password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">注册</button>
+                    </div>
+                    <div class="form-footer">
+                        <p>已有账号？ <a href="#" id="showLogin">立即登录</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Message Display -->
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

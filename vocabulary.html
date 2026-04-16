@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背单词应用 - 单词本</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>📚 背单词</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html">主页</a></li>
+                <li><a href="vocabulary.html" class="active">单词本</a></li>
+                <li><a href="quiz.html">开始测验</a></li>
+                <li><a href="#" id="logoutBtn">退出</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>我的单词本</h2>
+            <button id="addWordBtn" class="btn btn-primary">➕ 添加单词</button>
+        </div>
+
+        <!-- Add/Edit Word Modal -->
+        <div id="wordModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modalTitle">添加单词</h3>
+                    <span class="close">&times;</span>
+                </div>
+                <form id="wordForm">
+                    <input type="hidden" id="wordId">
+                    <div class="form-group">
+                        <label for="wordInput">单词 *</label>
+                        <input type="text" id="wordInput" required 
+                               placeholder="例如：apple" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="definitionInput">释义 *</label>
+                        <textarea id="definitionInput" required rows="3"
+                                  placeholder="例如：苹果；苹果树"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInput">例句</label>
+                        <textarea id="exampleInput" rows="2"
+                                  placeholder="例如：I like to eat apples."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoryInput">分类</label>
+                        <input type="text" id="categoryInput" 
+                               placeholder="例如：水果、动物、日常用语" 
+                               list="categoryList" autocomplete="off">
+                        <datalist id="categoryList"></datalist>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="cancelBtn">取消</button>
+                        <button type="submit" class="btn btn-primary">保存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="search-section">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="🔍 搜索单词或释义..." autocomplete="off">
+            </div>
+            <div class="filter-bar">
+                <select id="categoryFilter">
+                    <option value="">所有分类</option>
+                </select>
+                <select id="sortBy">
+                    <option value="date-desc">最新添加</option>
+                    <option value="date-asc">最早添加</option>
+                    <option value="alpha-asc">A-Z</option>
+                    <option value="alpha-desc">Z-A</option>
+                    <option value="review-desc">复习次数</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Word Count -->
+        <div class="word-count">
+            <p>共 <strong id="wordCount">0</strong> 个单词</p>
+        </div>
+
+        <!-- Word List -->
+        <div id="wordList" class="word-list">
+            <p class="no-data">暂无单词，点击上方按钮添加单词</p>
+        </div>
+
+        <!-- Delete Confirmation Modal -->
+        <div id="deleteModal" class="modal">
+            <div class="modal-content modal-small">
+                <div class="modal-header">
+                    <h3>确认删除</h3>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p>确定要删除单词 "<strong id="deleteWordName"></strong>" 吗？</p>
+                    <p class="warning-text">此操作无法撤销！</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancelDeleteBtn">取消</button>
+                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn">删除</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/vocabulary.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背单词应用 - 主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>📚 背单词</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html" class="active">主页</a></li>
+                <li><a href="vocabulary.html">单词本</a></li>
+                <li><a href="quiz.html">开始测验</a></li>
+                <li><a href="#" id="logoutBtn">退出</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="welcome-section">
+            <h2>欢迎回来，<span id="username"></span>！</h2>
+            <p class="welcome-message">继续你的学习之旅</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">🔥</div>
+                <div class="stat-content">
+                    <h3>连续登录</h3>
+                    <p class="stat-value" id="loginStreak">0</p>
+                    <p class="stat-label">天</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📖</div>
+                <div class="stat-content">
+                    <h3>单词总数</h3>
+                    <p class="stat-value" id="totalWords">0</p>
+                    <p class="stat-label">个</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-content">
+                    <h3>测验次数</h3>
+                    <p class="stat-value" id="totalQuizzes">0</p>
+                    <p class="stat-label">次</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-content">
+                    <h3>平均分数</h3>
+                    <p class="stat-value" id="avgScore">0</p>
+                    <p class="stat-label">%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-section">
+            <h3>快速操作</h3>
+            <div class="action-grid">
+                <a href="vocabulary.html" class="action-card">
+                    <div class="action-icon">➕</div>
+                    <h4>添加单词</h4>
+                    <p>扩充你的单词库</p>
+                </a>
+
+                <a href="quiz.html" class="action-card">
+                    <div class="action-icon">🎮</div>
+                    <h4>开始测验</h4>
+                    <p>测试你的记忆力</p>
+                </a>
+
+                <a href="vocabulary.html" class="action-card">
+                    <div class="action-icon">📝</div>
+                    <h4>管理单词</h4>
+                    <p>编辑或删除单词</p>
+                </a>
+
+                <a href="#" id="viewStatsBtn" class="action-card">
+                    <div class="action-icon">📊</div>
+                    <h4>查看统计</h4>
+                    <p>了解学习进度</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="recent-section">
+            <h3>最近测验记录</h3>
+            <div id="recentQuizzes" class="quiz-history">
+                <p class="no-data">暂无测验记录</p>
+            </div>
+        </div>
+
+        <div class="tips-section">
+            <h3>💡 学习小贴士</h3>
+            <div class="tip-card">
+                <p id="dailyTip">每天坚持学习，养成良好的学习习惯！</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

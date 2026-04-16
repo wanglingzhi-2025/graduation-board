@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>错题本 MVP</title>
+  <link rel="stylesheet" href="css/wrongbook.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div class="status-safe-area"></div>
+
+    <header class="app-header">
+      <div class="header-main">
+        <div>
+          <p class="eyebrow">AI 智能学习助手</p>
+          <h1>错题本</h1>
+          <p class="subtitle">整理错题、发现薄弱点、练习相似题</p>
+        </div>
+        <button class="icon-btn" id="seedDemoBtn" type="button" aria-label="加载示例数据">＋</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="section-label">今日学习</p>
+          <h2>建立你的专属错题复习路径</h2>
+          <p>从录入错题开始，系统会自动帮你汇总薄弱知识点并推荐练习。</p>
+        </div>
+        <div class="hero-actions">
+          <button class="primary-btn" data-view-target="capture" type="button">录入错题</button>
+          <button class="secondary-btn" data-view-target="notebook" type="button">查看错题本</button>
+        </div>
+      </section>
+
+      <section class="quick-actions-card">
+        <button class="quick-action" data-view-target="capture" type="button">
+          <span class="quick-action-icon">📷</span>
+          <span class="quick-action-text">
+            <strong>拍照录入</strong>
+            <small>快速添加新错题</small>
+          </span>
+        </button>
+        <button class="quick-action" data-view-target="notebook" type="button">
+          <span class="quick-action-icon">📘</span>
+          <span class="quick-action-text">
+            <strong>错题本</strong>
+            <small>查看全部错题记录</small>
+          </span>
+        </button>
+        <button class="quick-action" data-view-target="practice" type="button">
+          <span class="quick-action-icon">📝</span>
+          <span class="quick-action-text">
+            <strong>相似练习</strong>
+            <small>巩固薄弱知识点</small>
+          </span>
+        </button>
+      </section>
+
+      <section class="stats-grid" id="statsGrid">
+        <article class="stat-card">
+          <span class="stat-label">错题总数</span>
+          <strong id="totalQuestions">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">薄弱知识点</span>
+          <strong id="weakPointsCount">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">推荐练习</span>
+          <strong id="practiceCount">0</strong>
+        </article>
+      </section>
+
+      <section class="view-panel active" id="view-home">
+        <div class="section-head">
+          <div>
+            <p class="section-label">学习概览</p>
+            <h3>本周复习情况</h3>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="info-card">
+            <div class="card-title-row">
+              <h4>最近记录</h4>
+              <span class="mini-tag">最新</span>
+            </div>
+            <ul id="recentActivityList" class="plain-list">
+              <li>还没有保存错题。</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <div class="card-title-row">
+              <h4>薄弱知识点</h4>
+              <span class="mini-tag">重点</span>
+            </div>
+            <ul id="weakTopicList" class="plain-list">
+              <li>暂无数据。</li>
+            </ul>
+          </article>
+
+          <article class="info-card suggestion-card">
+            <div class="card-title-row">
+              <h4>学习建议</h4>
+              <span class="mini-tag mini-tag-accent">建议</span>
+            </div>
+            <p id="studySuggestion">先添加第一道错题，系统会自动生成学习建议。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="view-panel" id="view-capture">
+        <div class="section-head">
+          <div>
+            <p class="section-label">错题录入</p>
+            <h3>手动录入错题</h3>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-item active">
+            <span class="step-dot">1</span>
+            <span>填写题目信息</span>
+          </div>
+          <div class="step-item">
+            <span class="step-dot">2</span>
+            <span>保存到错题本</span>
+          </div>
+          <div class="step-item">
+            <span class="step-dot">3</span>
+            <span>查看推荐练习</span>
+          </div>
+        </div>
+
+        <form id="wrongQuestionForm" class="form-card">
+          <div class="form-grid">
+            <label>
+              学科
+              <select id="subject" required>
+                <option value="">请选择学科</option>
+                <option value="数学">数学</option>
+                <option value="英语">英语</option>
+              </select>
+            </label>
+
+            <label>
+              题型
+              <select id="questionType" required>
+                <option value="">请选择题型</option>
+                <option value="选择题">选择题</option>
+                <option value="填空题">填空题</option>
+                <option value="简答题">简答题</option>
+              </select>
+            </label>
+
+            <label>
+              知识点
+              <input id="knowledgePoint" type="text" placeholder="例如：一次函数" required />
+            </label>
+
+            <label>
+              错因
+              <select id="errorReason" required>
+                <option value="">请选择错因</option>
+                <option value="概念不清">概念不清</option>
+                <option value="计算错误">计算错误</option>
+                <option value="审题错误">审题错误</option>
+                <option value="粗心失误">粗心失误</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            题目内容 / OCR 识别文本
+            <textarea id="ocrText" rows="6" placeholder="可粘贴或编辑识别出的题目内容..." required></textarea>
+          </label>
+
+          <label>
+            个人备注
+            <textarea id="questionNote" rows="3" placeholder="补充你的订正思路、易错提醒或复习计划..."></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="primary-btn full-btn" type="submit">保存到错题本</button>
+            <button class="secondary-btn full-btn" type="reset">清空内容</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="view-panel" id="view-notebook">
+        <div class="section-head">
+          <div>
+            <p class="section-label">错题管理</p>
+            <h3>我的错题本</h3>
+          </div>
+        </div>
+
+        <div class="toolbar card-toolbar">
+          <select id="filterSubject">
+            <option value="">全部学科</option>
+            <option value="数学">数学</option>
+            <option value="英语">英语</option>
+          </select>
+          <input id="searchInput" type="search" placeholder="搜索知识点、题目或错因" />
+        </div>
+
+        <div id="questionList" class="question-list">
+          <article class="empty-card">还没有错题记录。</article>
+        </div>
+      </section>
+
+      <section class="view-panel" id="view-practice">
+        <div class="section-head">
+          <div>
+            <p class="section-label">专项练习</p>
+            <h3>相似题推荐</h3>
+          </div>
+        </div>
+
+        <div id="practiceList" class="practice-list">
+          <article class="empty-card">先保存一道错题，再查看相似练习。</article>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-view-target="home" type="button">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-text">首页</span>
+      </button>
+      <button class="nav-item" data-view-target="capture" type="button">
+        <span class="nav-icon">📷</span>
+        <span class="nav-text">录入</span>
+      </button>
+      <button class="nav-item" data-view-target="notebook" type="button">
+        <span class="nav-icon">📘</span>
+        <span class="nav-text">错题本</span>
+      </button>
+      <button class="nav-item" data-view-target="practice" type="button">
+        <span class="nav-icon">📝</span>
+        <span class="nav-text">练习</span>
+      </button>
+    </nav>
+  </div>
+
+  <script src="js/wrongbook-data.js"></script>
+  <script src="js/wrongbook-storage.js"></script>
+  <script src="js/wrongbook-app.js"></script>
+</body>
+</html>

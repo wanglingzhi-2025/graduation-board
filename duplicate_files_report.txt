@@ -1,0 +1,615 @@
+重复文件分析报告
+扫描目录: C:\Users\ZZ09H7672\Downloads
+扫描时间: 2026-04-13 10:59:54.117654
+================================================================================
+
+总文件数: 915
+重复文件组数: 106
+将删除的文件数: 145
+
+================================================================================
+
+原始文件: 03 CAI.zip
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 03 CAI (2).zip
+
+原始文件: 1004JRG_error.txt
+  状态: ✓ 存在
+  重复文件数: 2
+  - 将删除: 1004JRG_error (1).txt
+  - 将删除: 1004JRG_error (2).txt
+
+原始文件: 1767667938306.jpg
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 1767667938306 (1).jpg
+
+原始文件: 2024 Statement ( 009744672 - Cheng, Lin  ).pdf
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 2024 Statement ( 009744672 - Cheng, Lin  ) (1).pdf
+
+原始文件: 2025 Annual Performance Evaluation_Dist.xlsx
+  状态: ✓ 存在
+  重复文件数: 5
+  - 将删除: 2025 Annual Performance Evaluation_Dist (1).xlsx
+  - 将删除: 2025 Annual Performance Evaluation_Dist (2).xlsx
+  - 将删除: 2025 Annual Performance Evaluation_Dist (3).xlsx
+  - 将删除: 2025 Annual Performance Evaluation_Dist (4).xlsx
+  - 将删除: 2025 Annual Performance Evaluation_Dist (5).xlsx
+
+原始文件: 2025 IBMer Watsonx Challenge.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 2025 IBMer Watsonx Challenge (1).pptx
+
+原始文件: 2025 Mid Yeare Accessment template AOP.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 2025 Mid Yeare Accessment template AOP (3).xlsx
+
+原始文件: AI Test Strategy Proposal.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: AI Test Strategy Proposal (1).pptx
+
+原始文件: AO AI Core Talent Identification.xlsx
+  状态: ✓ 存在
+  重复文件数: 2
+  - 将删除: AO AI Core Talent Identification (1).xlsx
+  - 将删除: AO AI Core Talent Identification (2).xlsx
+
+原始文件: AWSCLIV2.msi
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: AWSCLIV2 (2).msi (作为原始文件)
+
+原始文件: AWSコンソールのログイン.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: AWSコンソールのログイン (1).xlsx (作为原始文件)
+
+原始文件: An Qi Yu CV English _2501_en.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: An Qi Yu CV English _2501_en (1).pptx
+
+原始文件: April 2025 Currency(3647).xls
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: April 2025 Currency(3647) (1).xls
+
+原始文件: April 2025 Currency.xls
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: April 2025 Currency(3647).xls (作为原始文件)
+
+原始文件: Assignment Information Summary.xlsx
+  状态: ✓ 存在
+  重复文件数: 2
+  - 将删除: Assignment Information Summary (1).xlsx
+  - 将删除: Assignment Information Summary (2).xlsx
+
+原始文件: August 2025 Currency.xls
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: August 2025 Currency(3654).xls (作为原始文件)
+
+原始文件: Back+to+the+Wolf+Pack.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Back+to+the+Wolf+Pack (1).pptx
+
+原始文件: Backend_CodeLine集計.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: Backend_CodeLine集計 (1).xlsx (作为原始文件)
+
+原始文件: BenchReport_2026_Q1_WEEK3.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: BenchReport_2026_Q1_WEEK3 (1).xlsx
+
+原始文件: Book1.xlsx
+  状态: ✗ 不存在
+  重复文件数: 2
+  → 将保留: Book1 (1).xlsx (作为原始文件)
+  - 将删除: Book1 (2).xlsx
+
+原始文件: CIC Export Performance Management Enablement.pptx
+  状态: ✗ 不存在
+  重复文件数: 2
+  → 将保留: CIC Export Performance Management Enablement  (1).pptx (作为原始文件)
+  - 将删除: CIC Export Performance Management Enablement  (2).pptx
+
+原始文件: CV_Yin Xue Bin(ZZ01V4)_7B_AMS+Fullstack.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: CV_Yin Xue Bin(ZZ01V4)_7B_AMS+Fullstack (1).pptx
+
+原始文件: China PPM - Q2'25 WK06 AOP Team1.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: China PPM - Q2'25 WK06 AOP Team1 (1).xlsx
+
+原始文件: China PPM - Q2'25 WK10 AOP Team1.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: China PPM - Q2'25 WK10 AOP Team1 (1).xlsx (作为原始文件)
+
+原始文件: Citrus-202501.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: Citrus-202501 (1).xlsx (作为原始文件)
+
+原始文件: CompPlan_GDP_2024_Performance_Year_的管理层评估_(Ling.Zhi.Wang@ibm.com).xls
+  状态: ✓ 存在
+  重复文件数: 3
+  - 将删除: CompPlan_GDP_2024_Performance_Year_的管理层评估_(Ling.Zhi.Wang@ibm.com) (1).xls
+  - 将删除: CompPlan_GDP_2024_Performance_Year_的管理层评估_(Ling.Zhi.Wang@ibm.com) (2).xls
+  - 将删除: CompPlan_GDP_2024_Performance_Year_的管理层评估_(Ling.Zhi.Wang@ibm.com) (3).xls
+
+原始文件: Create a PIP and tag LP in AskHR step by step guide.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Create a PIP and tag LP in AskHR step by step guide (1).pptx
+
+原始文件: EA.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: EA (2).xlsx
+
+原始文件: EF SET Certificate.pdf
+  状态: ✓ 存在
+  重复文件数: 2
+  - 将删除: EF SET Certificate (1).pdf
+  - 将删除: EF SET Certificate (2).pdf
+
+原始文件: Employee Status Report v1.0_202503.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Employee Status Report v1.0_202503 (1).xlsx
+
+原始文件: Employee Status Report v1.0_20250506.xlsx
+  状态: ✓ 存在
+  重复文件数: 3
+  - 将删除: Employee Status Report v1.0_20250506 (1).xlsx
+  - 将删除: Employee Status Report v1.0_20250506 (2).xlsx
+  - 将删除: Employee Status Report v1.0_20250506 (3).xlsx
+
+原始文件: Engagement Summary.xlsx
+  状态: ✓ 存在
+  重复文件数: 2
+  - 将删除: Engagement Summary (1).xlsx
+  - 将删除: Engagement Summary (2).xlsx
+
+原始文件: Feb 2025 Currency.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: Feb 2025 Currency(3643).xlsx (作为原始文件)
+
+原始文件: GDP_Dist_v1.0.xlsx
+  状态: ✗ 不存在
+  重复文件数: 3
+  → 将保留: GDP_Dist_v1.0 (1).xlsx (作为原始文件)
+  - 将删除: GDP_Dist_v1.0 (2).xlsx
+  - 将删除: GDP_Dist_v1.0 (5).xlsx
+
+原始文件: Gemini_Generated_Image_hvowqyhvowqyhvow.png
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Gemini_Generated_Image_hvowqyhvowqyhvow (1).png
+
+原始文件: Hub Bench Report-CIC China-20250818_by weeks_AOP.xlsx
+  状态: ✓ 存在
+  重复文件数: 2
+  - 将删除: Hub Bench Report-CIC China-20250818_by weeks_AOP (1).xlsx
+  - 将删除: Hub Bench Report-CIC China-20250818_by weeks_AOP (2).xlsx
+
+原始文件: IAM・踏み台・アクセスチェック・ROSA_申請書_citrsシステム.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: IAM・踏み台・アクセスチェック・ROSA_申請書_citrsシステム (3).xlsx (作为原始文件)
+
+原始文件: IBM CV SunXiaoXu.pptx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: IBM CV SunXiaoXu (1).pptx (作为原始文件)
+
+原始文件: IBM CV_Long Ze Hong (03434C672).pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: IBM CV_Long Ze Hong (03434C672) (1).pptx
+
+原始文件: IBM CV_Yang Ren Yuan.pptx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: IBM CV_Yang Ren Yuan(072811672).pptx (作为原始文件)
+
+原始文件: IBM Confidential--2025 CIC China Project Cost Estimation Tool v 1.0.xlsm
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: IBM Confidential--2025 CIC China Project Cost Estimation Tool v 1.0 (1).xlsm
+
+原始文件: IBM QES - Capability presentation_2026 V1.0.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: IBM QES - Capability presentation_2026 V1.0 (1).pptx
+
+原始文件: IBM_2026 Calendar.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: IBM_2026 Calendar (1).xlsx
+
+原始文件: Insurance Claims Handling user guild.docx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Insurance Claims Handling user guild (1).docx
+
+原始文件: Intergrated Competency Team LP List_as of 0519_YunFuHe.xlsx
+  状态: ✗ 不存在
+  重复文件数: 2
+  → 将保留: Intergrated Competency Team LP List_as of 0519_YunFuHe (1).xlsx (作为原始文件)
+  - 将删除: Intergrated Competency Team LP List_as of 0519_YunFuHe (3).xlsx
+
+原始文件: Jan 2025 (Currency.xls
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: Jan 2025 (Currency(3641).xls (作为原始文件)
+
+原始文件: July 2025 Currency(3652).xls
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: July 2025 Currency(3652) (1).xls
+
+原始文件: July 2025 Currency.xls
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: July 2025 Currency(3652).xls (作为原始文件)
+
+原始文件: June 2025 Currency.xls
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: June 2025 Currency(3651).xls (作为原始文件)
+
+原始文件: LP status by UT analyais_AOP as of 20250717 Team1.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: LP status by UT analyais_AOP as of 20250717 Team1 (1).xlsx
+
+原始文件: Learning Status Tracking_202505.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: Learning Status Tracking_202505 (0521).xlsx (作为原始文件)
+
+原始文件: License to Lead Badge步骤说明.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: License to Lead Badge步骤说明 (1).pptx
+
+原始文件: MEF introduction.pptx
+  状态: ✓ 存在
+  重复文件数: 2
+  - 将删除: MEF introduction (1).pptx
+  - 将删除: MEF introduction (2).pptx
+
+原始文件: March 2025 Currency.xls
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: March 2025 Currency(3645).xls (作为原始文件)
+
+原始文件: May 2025 Currency.xls
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: May 2025 Currency(3649).xls (作为原始文件)
+
+原始文件: Method Content transcript.pdf
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Method Content transcript (1).pdf
+
+原始文件: Method Tailoring transcript.pdf
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Method Tailoring transcript (1).pdf
+
+原始文件: Miss Meal & Authorized Taxi.pptx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: Miss Meal & Authorized Taxi (3).pptx (作为原始文件)
+
+原始文件: Oct 2024 Currency(3636).xls
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: Oct 2024 Currency(3636) (1).xls (作为原始文件)
+
+原始文件: PGS Position Status v2.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: PGS Position Status v2 (1).xlsx
+
+原始文件: PIP form_Liu JinJin(049868)_202510.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: PIP form_Liu JinJin(049868)_202510 (1).xlsx
+
+原始文件: PIP form_XuLiangLiang(209501)_202510.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: PIP form_XuLiangLiang(209501)_202510 (1).xlsx
+
+原始文件: PIP 参考2(Export).xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: PIP 参考2(Export)  (1).xlsx (作为原始文件)
+
+原始文件: Performance Evaluation CAO Team1_T1-0105.xlsx
+  状态: ✓ 存在
+  重复文件数: 3
+  - 将删除: Performance Evaluation CAO Team1_T1-0105 (1).xlsx
+  - 将删除: Performance Evaluation CAO Team1_T1-0105 (2).xlsx
+  - 将删除: Performance Evaluation CAO Team1_T1-0105 (3).xlsx
+
+原始文件: Petronas Demand list.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: Petronas Demand list (1).xlsx (作为原始文件)
+
+原始文件: Phase3 Module Select.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: Phase3 Module Select (0829).xlsx (作为原始文件)
+
+原始文件: Q3 Training Quarterly Plan Template_2024 v18 (Plan rate @7.0)-CIC China.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Q3 Training Quarterly Plan Template_2024 v18 (Plan rate @7.0)-CIC China (1).xlsx
+
+原始文件: RV结果.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: RV结果 (1).xlsx
+
+原始文件: S004_APL_開発ガイド_フロント.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: S004_APL_開発ガイド_フロント (3).xlsx (作为原始文件)
+
+原始文件: S004_GD01_005_API Gateway設定手順.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: S004_GD01_005_API Gateway設定手順 (1).xlsx (作为原始文件)
+
+原始文件: SAP 休假申请提交.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: SAP 休假申请提交 (1).pptx
+
+原始文件: SO3 5FL 20 Seats Room.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: SO3 5FL 20 Seats Room (1).xlsx (作为原始文件)
+
+原始文件: Screenshot 2025-11-20 at 08.22.15.png
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Screenshot 2025-11-20 at 08.22.15 (1).png
+
+原始文件: Screenshot 2026-03-30 at 16.56.19.png
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Screenshot 2026-03-30 at 16.56.19 (1).png
+
+原始文件: September 2025 Currency.xls
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: September 2025 Currency(3655).xls (作为原始文件)
+
+原始文件: ServiceNow CPL Team1 Status.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: ServiceNow CPL Team1 Status (1).xlsx
+
+原始文件: ServiceNow Resouce List CAO Team1 20260120.xlsx
+  状态: ✓ 存在
+  重复文件数: 2
+  - 将删除: ServiceNow Resouce List CAO Team1 20260120 (1).xlsx
+  - 将删除: ServiceNow Resouce List CAO Team1 20260120 (2).xlsx
+
+原始文件: ServiceNow Training Plan_2025Q2_Developer&ITSM.pptx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: ServiceNow Training Plan_2025Q2_Developer&ITSM(20250509).pptx (作为原始文件)
+
+原始文件: ServiceNowProject ITSM Practice.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: ServiceNowProject ITSM Practice (1).pptx
+
+原始文件: SessionManagerPluginSetup.exe
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: SessionManagerPluginSetup (1).exe
+
+原始文件: SmartOpsInterimEvaluation_v2.xlsx
+  状态: ✓ 存在
+  重复文件数: 2
+  - 将删除: SmartOpsInterimEvaluation_v2 (1).xlsx
+  - 将删除: SmartOpsInterimEvaluation_v2 (2).xlsx
+
+原始文件: Sobeys case study-SAP QE.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Sobeys case study-SAP QE (1).pptx
+
+原始文件: SunYu+7A+ADVISORY IT SPECIALIST+JAVA&COLBOL.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: SunYu+7A+ADVISORY IT SPECIALIST+JAVA&COLBOL (1).pptx
+
+原始文件: Virtual Project Information_0425.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: Virtual Project Information_0425 (1).xlsx (作为原始文件)
+
+原始文件: Virtual Project Information_0512.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Virtual Project Information_0512 (1).xlsx
+
+原始文件: XX CV English _模版.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: XX CV English _模版 (1).pptx
+
+原始文件: Xuebin Yin CV English _2505.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: Xuebin Yin CV English _2505 (1).pptx
+
+原始文件: auto_generated_captions.vtt
+  状态: ✓ 存在
+  重复文件数: 2
+  - 将删除: auto_generated_captions (1).vtt
+  - 将删除: auto_generated_captions (2).vtt
+
+原始文件: ibmconsultingassistants-0.0.22.vsix
+  状态: ✓ 存在
+  重复文件数: 2
+  - 将删除: ibmconsultingassistants-0.0.22 (1).vsix
+  - 将删除: ibmconsultingassistants-0.0.22 (2).vsix
+
+原始文件: image.png
+  状态: ✓ 存在
+  重复文件数: 45
+  - 将删除: image (1).png
+  - 将删除: image (2).png
+  - 将删除: image (3).png
+  - 将删除: image (4).png
+  - 将删除: image (5).png
+  - 将删除: image (6).png
+  - 将删除: image (7).png
+  - 将删除: image (8).png
+  - 将删除: image (9).png
+  - 将删除: image (10).png
+  - 将删除: image (11).png
+  - 将删除: image (12).png
+  - 将删除: image (13).png
+  - 将删除: image (14).png
+  - 将删除: image (15).png
+  - 将删除: image (16).png
+  - 将删除: image (17).png
+  - 将删除: image (18).png
+  - 将删除: image (19).png
+  - 将删除: image (20).png
+  - 将删除: image (21).png
+  - 将删除: image (22).png
+  - 将删除: image (23).png
+  - 将删除: image (24).png
+  - 将删除: image (25).png
+  - 将删除: image (26).png
+  - 将删除: image (27).png
+  - 将删除: image (28).png
+  - 将删除: image (29).png
+  - 将删除: image (30).png
+  - 将删除: image (31).png
+  - 将删除: image (311).png
+  - 将删除: image (312).png
+  - 将删除: image (313).png
+  - 将删除: image (314).png
+  - 将删除: image (315).png
+  - 将删除: image (316).png
+  - 将删除: image (317).png
+  - 将删除: image (318).png
+  - 将删除: image (319).png
+  - 将删除: image (320).png
+  - 将删除: image (321).png
+  - 将删除: image (322).png
+  - 将删除: image (323).png
+  - 将删除: image (324).png
+
+原始文件: members assignment.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: members assignment (1).xlsx
+
+原始文件: report.pdf
+  状态: ✗ 不存在
+  重复文件数: 4
+  → 将保留: report (3).pdf (作为原始文件)
+  - 将删除: report (4).pdf
+  - 将删除: report (5).pdf
+  - 将删除: report (6).pdf
+
+原始文件: understanding-the-unique-risks-of-generative-ai-transcript.pdf
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: understanding-the-unique-risks-of-generative-ai-transcript (1).pdf
+
+原始文件: updateExcelVersionTool.py
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: updateExcelVersionTool (1).py
+
+原始文件: windows.zip
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: windows (1).zip
+
+原始文件: ~$お客様情報・旅行カルテ管理_画面仕様変更管理一覧.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: ~$お客様情報・旅行カルテ管理_画面仕様変更管理一覧 (42).xlsx (作为原始文件)
+
+原始文件: 【原本・提出時PDF化必須】2025年度 OSAPJT 教育受講完了報告.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 【原本・提出時PDF化必須】2025年度 OSAPJT 教育受講完了報告 (1).xlsx
+
+原始文件: ユーザロール登録データパターン.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: ユーザロール登録データパターン (1).xlsx (作为原始文件)
+
+原始文件: 分析.xlsx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 分析 (1).xlsx
+
+原始文件: 単価2025年.xlsx
+  状态: ✓ 存在
+  重复文件数: 3
+  - 将删除: 単価2025年 (1).xlsx
+  - 将删除: 単価2025年 (2).xlsx
+  - 将删除: 単価2025年 (3).xlsx
+
+原始文件: 常规文具申请表格-更新版_JTB_2025.xls
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 常规文具申请表格-更新版_JTB_2025 (1).xls
+
+原始文件: 影像使用同意书-个人.docx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 影像使用同意书-个人 (1).docx
+
+原始文件: 新規 Microsoft Excel ワークシート.xlsx
+  状态: ✗ 不存在
+  重复文件数: 1
+  → 将保留: 新規 Microsoft Excel ワークシート (1).xlsx (作为原始文件)
+
+原始文件: 最难忘的地方—张家界.pptx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 最难忘的地方—张家界 (1).pptx
+
+原始文件: 自我介绍.docx
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 自我介绍 (1).docx
+
+原始文件: 马铜13236936536mtongsz@cn.ibm.com.pdf
+  状态: ✓ 存在
+  重复文件数: 1
+  - 将删除: 马铜13236936536mtongsz@cn.ibm.com (1).pdf
